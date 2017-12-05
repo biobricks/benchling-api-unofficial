@@ -5,7 +5,7 @@ An unofficial node.js module for accessing the [benchling](https://benchling.com
 
 ```
 npm install benchling-api-unofficial
-``
+```
 
 # Setup
 
