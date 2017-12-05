@@ -1,16 +1,22 @@
 
-A node.js module for the [benchling](https://benchling.com/) API.
+An unofficial node.js module for accessing the [benchling](https://benchling.com/) API.
+
+# Installation
+
+```
+npm install benchling-api-unofficial
+``
 
 # Setup
 
-First you need an API key. Unfortunately the only way to get one currently seems to be to ask support. Log in to benchling and use the bottom right icon to open a chat then ask support for API access. They can take a few days to reply. 
+First you need an API key. Unfortunately the only way to get one currently seems to be to ask benchling support. Log in to benchling and use the bottom right icon to open a chat then ask support for API access. They can take a few days to reply. 
 
 Once they enable API access log onto benchling once again, then go to your settings page by clicking the left bottom icon and find the 'settings' link near the top of the pop-up. Scroll to the bottom and you'll see a button called __Generate API key__. Click it and copy the key string.
 
 Install dependencies and create a `settings.js` file:
 
 ```
-npm install
+npm install # <- only required if you cloned from git
 cp settings.js.example settings.js
 ```
 
@@ -27,7 +33,7 @@ Now you can try an example, e.g. to list all of your benchling sequences:
 Here's an example of listing all folders containing the string 'mySequences':
 
 ```
-var benchling = require('../index.js')(1, '<myApiKey>');
+var benchling = require('benchling-api-unofficial')(1, '<myApiKey>');
 
 benchling.folder.list({query: 'mySequences'}, function(err, data) {
   if(data) return console.error(err);
@@ -65,7 +71,7 @@ See the [official benchling API documentation](https://api.benchling.com/docs/) 
 
 # Legal
 
-Copyright 2017 BioBricks Foundation
+Copyright 2017 BioBricks Foundation.
 
 License: AGPLv3.
 
