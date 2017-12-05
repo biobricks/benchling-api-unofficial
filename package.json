@@ -1,0 +1,21 @@
+{
+  "name": "benchling-api-unofficial",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "license": "AGPL-3.0",
+  "author": {
+    "name": "Marc Juul",
+    "email": "npm@juul.io"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/biobricks/benchling-api-unofficial/issues"
+  },
+  "homepage": "http://github.com/biobricks/benchling-api-unofficial",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/biobricks/benchling-api-unofficial.git"
+  }
+}
